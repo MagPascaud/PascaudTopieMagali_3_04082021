@@ -1,0 +1,18 @@
+{
+  "name": "node_test",
+  "version": "0.0.2",
+  "description": "A test for npm",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/:public/css/"
+  },
+  "keywords": [
+    "test",
+    "npm"
+  ],
+  "author": "yangqiang5@wanda.cn",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.37.5"
+  }
+}

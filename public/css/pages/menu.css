@@ -1,0 +1,28 @@
+/*police*/
+@font-face {
+  font-family: "robotomedium";
+  src: url("../base/roboto_medium_macroman/Roboto-Medium-webfont.ttf");
+}
+body {
+  font-family: "robotomedium", "Georgia", "Times New Roman";
+}
+
+h1 {
+  color: red;
+  background-color: blue;
+}
+
+p {
+  font-size: 20px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+}
+
+.image_menu img {
+  width: 25%;
+}
+
+/*# sourceMappingURL=menu.css.map */

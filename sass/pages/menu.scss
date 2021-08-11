@@ -1,0 +1,21 @@
+@import "../utils/_variables";
+@import "../layouts/footer";
+@import "../base/base";
+
+
+body {
+    font-family:'robotomedium', 'Georgia', 'Times New Roman';
+}
+h1 {
+    color: red;
+    background-color: blue;
+}
+p {
+    font-size: $p-font-size;
+}
+footer {
+    @include color-footer
+}
+.image_menu img {
+    width: 25%;
+}
