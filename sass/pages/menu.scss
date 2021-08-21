@@ -1,21 +1,21 @@
 @import "../utils/_variables";
 @import "../layouts/footer";
 @import "../base/base";
+@import "../layouts/menu-type";
+@import "../layouts/header";
 
 
 body {
-    font-family:'robotomedium', 'Georgia', 'Times New Roman';
+    font-family:'Roboto', sans-serif;
+    width: 100%;
 }
 h1 {
-    color: red;
-    background-color: blue;
+    font-family: 'Shrikhand', cursive;;
 }
 p {
     font-size: $p-font-size;
 }
 footer {
-    @include color-footer
+    @include footer;
 }
-.image_menu img {
-    width: 25%;
-}
+

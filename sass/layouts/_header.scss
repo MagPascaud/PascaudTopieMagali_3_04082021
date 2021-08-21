@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img {
+        width: 200px;
+    }
+
+    #icone_fleche {
+        position: absolute;
+        left: 10px;
+    }
+}
+
+

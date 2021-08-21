@@ -1,4 +1,22 @@
-@mixin color-footer {
+@mixin footer {
     background-color: #353535;
     color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+footer i {
+    font-family: 'Roboto', sans-serif;
+}
+h6 {
+    font-family: 'Shrikhand', cursive;
+    font-size:medium;
+    margin: 15px 15px 15px 0;
 }
