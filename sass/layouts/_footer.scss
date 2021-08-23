@@ -3,7 +3,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 0 10px 0 10px;
+    padding: 20px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -11,12 +11,19 @@ footer a {
     color: white;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+    
 }
-footer i {
-    font-family: 'Roboto', sans-serif;
+.icone_footer a {
+    margin-left: 20px;
+}
+.icone_footer i {
+    font-size: 15px;
 }
 h6 {
     font-family: 'Shrikhand', cursive;
-    font-size:medium;
-    margin: 15px 15px 15px 0;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+footer div {
+    margin: 5px 0 5px 0;
 }
