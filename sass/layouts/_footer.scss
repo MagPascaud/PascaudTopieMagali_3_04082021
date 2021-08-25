@@ -13,11 +13,11 @@ footer a {
     text-decoration: none;
     
 }
-.icone_footer a {
-    margin-left: 20px;
+.icone_main i {
+    font-size: 10px;
 }
-.icone_footer i {
-    font-size: 15px;
+footer i+a {
+    margin-left: 13px;
 }
 h6 {
     font-family: 'Shrikhand', cursive;
