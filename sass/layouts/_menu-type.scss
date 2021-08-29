@@ -6,11 +6,16 @@
     padding: 15px;
 }
 .plat {
-    border-radius: 20px;
+    border-radius: 15px;
     background-color:white;
-    padding: 0 10px 0 10px;
     margin-bottom: 10px;
     box-shadow: 2px 2px 10px #E7E7E7;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.texte_gauche {
+    padding: 10px 0 0 10px;
 }
 #titre_menu {
     display: flex;
@@ -21,22 +26,55 @@
 .ligne_menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    font-size: 13px;
+    padding: 5px;
 }
 #titre_menu i {
     font-size: 25px;
 }
+.fond_bleu {
+    background-color: #99E2D0;
+    border: none;
+    width: 50px;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.fond_bleu i {
+    color: white;
+}
 h2 {
     font-weight: lighter;
     font-size: 18px;
+    border-bottom:solid #99E2D0;
+    width: 13%;
 }
-h3 {
+.nom_plat {
     margin: 15px 0 0 5px;
 }
-h4 {
-    margin: 5px 5px 10px 5px;
+.sous-titre {
     font-weight: lighter;
 }
-h5 {
-    margin: 5px 15px 10px 5px;
+.prix {
+    position: absolute;
+    right: 80px;
+}
+#commander {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    border-radius: 25px;
+    background:linear-gradient(#FF79DA, #9356DC);
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 15px 20px 15px 20px;
+}
+#commander a {
+    color: white;
+    text-decoration: none;
 }
