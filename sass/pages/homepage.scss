@@ -1,9 +1,65 @@
 @import "../utils/_variables";
+@import "../layouts/header";
+@import "../layouts/footer";
+@import "../base/base";
+@import "../component/btn";
 
-h1 {
-    color: yellowgreen;
-    background-color: brown;
+body {
+    font-family:'Roboto', sans-serif;
+    margin: auto;
 }
-p {
-    font-size: $p-font-size;
+footer {
+    @include footer;
+}
+#icone_fleche {
+    display: none;
+}
+#localisation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #EAEAEA;
+    padding: 15px;
+    font-weight: bold;
+    box-shadow: rgb(185, 183, 183) 0 2px 2px inset;
+}
+#localisation i {
+    position: absolute;
+    left: 100px;
+}
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #F6F6F6;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+}
+#intro h1 {
+    font-size: 1.5em;
+    padding: 0 40px 0 40px;
+}
+.intro_fonctionnement {
+    margin: 30px 0 20px 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.fonctionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #F6F6F6;
+    margin: 20px;
+    padding: 25px 15px 25px 15px;
+    box-shadow: 2px 4px 4px 2px rgb(230, 221, 221);
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.fonctionnement i {
+    position: absolute;
+    left: 60px;
 }

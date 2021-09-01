@@ -102,24 +102,6 @@ h2 {
   right: 80px;
 }
 
-#commander {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 50%;
-  border-radius: 25px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 15px 20px 15px 20px;
-}
-
-#commander a {
-  color: white;
-  text-decoration: none;
-}
-
 .image_menu img {
   width: 100%;
 }
@@ -141,6 +123,24 @@ header #icone_fleche {
 }
 header #icone_fleche a {
   color: black;
+}
+
+#btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  border-radius: 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 15px 20px 15px 20px;
+}
+
+#btn a {
+  color: white;
+  text-decoration: none;
 }
 
 body {

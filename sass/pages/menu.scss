@@ -3,6 +3,7 @@
 @import "../base/base";
 @import "../layouts/menu-type";
 @import "../layouts/header";
+@import "../component/btn";
 
 
 body {
@@ -18,5 +19,6 @@ p {
 footer {
     @include footer;
 }
+
 
 

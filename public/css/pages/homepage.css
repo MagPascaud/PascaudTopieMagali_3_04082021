@@ -1,10 +1,141 @@
-h1 {
-  color: yellowgreen;
-  background-color: brown;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 15px;
+}
+header img {
+  width: 200px;
+}
+header #icone_fleche {
+  position: absolute;
+  left: 10px;
+}
+header #icone_fleche a {
+  color: black;
 }
 
-p {
-  font-size: 20px;
+footer a {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.icone_main i {
+  font-size: 10px;
+}
+
+footer i + a {
+  margin-left: 13px;
+}
+
+.titre_footer {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+footer div {
+  margin: 5px 0 5px 0;
+}
+
+/*police*/
+@font-face {
+  font-family: "robotomedium";
+  src: url("../base/roboto_medium_macroman/Roboto-Medium-webfont.ttf");
+}
+#btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  border-radius: 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 15px 20px 15px 20px;
+}
+
+#btn a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+#icone_fleche {
+  display: none;
+}
+
+#localisation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #EAEAEA;
+  padding: 15px;
+  font-weight: bold;
+  box-shadow: #b9b7b7 0 2px 2px inset;
+}
+
+#localisation i {
+  position: absolute;
+  left: 100px;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: #F6F6F6;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+}
+
+#intro h1 {
+  font-size: 1.5em;
+  padding: 0 40px 0 40px;
+}
+
+.intro_fonctionnement {
+  margin: 30px 0 20px 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #F6F6F6;
+  margin: 20px;
+  padding: 25px 15px 25px 15px;
+  box-shadow: 2px 4px 4px 2px #e6dddd;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.fonctionnement i {
+  position: absolute;
+  left: 60px;
 }
 
 /*# sourceMappingURL=homepage.css.map */

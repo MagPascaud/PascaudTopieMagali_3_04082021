@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="public/css/pages/homepage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/pages/homepage.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="../public/css/pages/homepage.css">
+    <script src=" https://kit.fontawesome.com/4e51a065d0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <div id="logo">
-            <img src="images/logo/ohmyfood.png" alt="logo_Oh-my-food">
+        <img src="../public/images/logo/ohmyfood.png" alt="logo_Oh-my-food">
+        <div id="icone_fleche">
+            <a href="#">
+                <i class="fas fa-arrow-left"></i>
+            </a>
         </div>
     </header>
-    <div id="localisation">
-        <i class="fas fa-map-marker-alt">Paris, Belleville</i>
-    </div>
-    <h1>Réservez le menu qui vous convient</h1>
-    <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
-    
-    <footer>
-        <div id="logo">
-            <img src="images/logo/ohmyfood.png" alt="logo_Oh-my-food">
+    <main>
+        <div id="localisation">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="lieu">Paris, Belleville</div>
         </div>
-        <i class="fas fa-utensils">Proposer un restaurant</i>
-        <i class="fas fa-hands-helping">Devenir partenaire</i>
-        <p>Mentions légales</p>
-        <p>Contact</p>
+        <div id="intro">
+            <h1>Réservez le menu qui vous convient</h1>
+            <div>Découvrez des restaurants d'exception, sélectionnés par nos soins.</div>
+            <div id="btn">
+                <a href="#"><span>Explorer nos restaurants</span></a>
+            </div>
+        </div>
+        <div class="intro_fonctionnement">Fonctionnement</div>
+        <div class="fonctionnement"><i class="fas fa-mobile-alt"></i>
+            <div>Choisissez un restaurant</div>
+        </div>
+        <div class="fonctionnement"><i class="fas fa-list-ul"></i>
+            <div>Composez votre menu</div>
+        </div>
+        <div class="fonctionnement"><i class="fas fa-store"></i>
+            <div>Dégustez au restaurant</div>
+        </div>
+    </main>
+    <footer>
+        <a href="#">
+            <span class="titre_footer">ohmyfood</span>
+        </a>
+        <div><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></div>
+        <div class="icone_main"><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></div>
+        <div><a href="#">Mentions légales</a></div>
+        <div><a href="mailto:contact@ohmyfood.com" title="envoyer un mail">Contact</a></div>
     </footer>
 </body>
+
 </html>
