@@ -63,3 +63,14 @@ footer {
     position: absolute;
     left: 60px;
 }
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+
+}
+.restaurant img {
+    width: 60%;
+}
