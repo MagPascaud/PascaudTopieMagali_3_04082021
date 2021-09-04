@@ -147,7 +147,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: blue;
+  background-color: #F6F6F6;
   padding: 35px 20px;
   margin: 50px 0 0 0;
 }
@@ -164,14 +164,35 @@ footer {
 }
 .restaurant .restaurant_titre .restaurant_titre_bold {
   font-weight: bold;
+  margin-bottom: 5px;
 }
 .restaurant .restaurant_bloc {
   background-color: white;
   margin: 10px 0;
   border-radius: 15px;
 }
+.restaurant .restaurant_bloc .restaurant_bloc_coeur {
+  font-size: 1.5em;
+  padding: 10px;
+}
 .restaurant .restaurant_intro {
   font-size: 1.2em;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.restaurant_bloc_nouveau {
+  display: flex;
+  flex-direction: row;
+}
+.restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
+  position: absolute;
+  right: 30px;
+  margin: 10px;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  padding: 5px 10px;
+  color: #217460;
   font-weight: bold;
 }
 
@@ -181,6 +202,7 @@ footer {
   object-fit: cover;
   object-position: bottom;
   border-radius: 15px 15px 0 0;
+  position: relative;
 }
 
 /*# sourceMappingURL=homepage.css.map */
