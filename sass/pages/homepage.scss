@@ -32,7 +32,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: #F6F6F6;
+    background-color: $color_fond_gris;
     text-align: center;
     padding: 5px;
     margin: auto;
@@ -52,22 +52,40 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    background-color: #F6F6F6;
+    background-color: $color_fond_gris;
     margin: 20px;
     padding: 25px 15px 25px 15px;
     box-shadow: 2px 4px 4px 2px rgb(230, 221, 221);
     font-size: 0.9em;
     font-weight: bold;
+    .fonctionnement_numero {
+        position: absolute;
+        left: 10px;
+        color: white;
+        font-weight: lighter;
+        font-size: 0.8em;
+        border-radius: 30px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-color: $color_primaire;
+    }
 }
 .fonctionnement i {
     position: absolute;
     left: 60px;
+    color: grey;
+    font-size: 1.2em;
 }
 .restaurant {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #F6F6F6;
+    background-color:$color_fond_gris;
     padding: 35px 20px;
     margin: 50px 0 0 0;
     .restaurant_titre {
@@ -89,10 +107,14 @@ footer {
         background-color: white;
         margin: 10px 0;
         border-radius: 15px;
+        box-shadow: 2px 4px 4px 2px rgb(230, 221, 221);
         .restaurant_bloc_coeur {
             font-size: 1.5em;
             padding: 10px;
         }
+    }
+    .restaurant_bloc_coeur i {
+        color:fade-in($color_primaire, $amount: 0);
     }
     .restaurant_intro {
         font-size: 1.2em;
@@ -108,9 +130,9 @@ footer {
         right: 30px;
         margin: 10px;
         border-radius: 2px;
-        background-color: #99E2D0;
+        background-color: $color_tertaire;
         padding: 5px 10px;
-        color: darken($color: #99E2D0, $amount: 45);
+        color: darken($color_tertaire, $amount: 45);
         font-weight: bold;
     }
 }
@@ -118,8 +140,15 @@ footer {
     width: 100%;
     height: 160px;
     object-fit:cover;
-    object-position: bottom;
+    object-position:center;
     border-radius: 15px 15px 0 0;
     position: relative;
     
+}
+.restaurant_bloc a {
+    color: black;
+    text-decoration: none;
+}
+a:active .restaurant_bloc_gauche {
+    color: darken($color_tertaire, $amount: 45);
 }

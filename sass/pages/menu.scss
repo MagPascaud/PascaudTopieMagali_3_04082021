@@ -13,9 +13,6 @@ body {
 h1 {
     font-family: 'Shrikhand', cursive;;
 }
-p {
-    font-size: $p-font-size;
-}
 footer {
     @include footer;
 }

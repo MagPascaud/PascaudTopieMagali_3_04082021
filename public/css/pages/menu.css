@@ -31,8 +31,10 @@ footer div {
   display: flex;
   flex-direction: column;
   border-radius: 40px 40px 0 0;
-  background-color: #f6f6f6de;
+  background-color: #F6F6F6;
   padding: 15px;
+  position: relative;
+  margin-top: -35px;
 }
 
 .plat {
@@ -89,6 +91,7 @@ h2 {
   font-size: 18px;
   border-bottom: solid #99E2D0;
   width: 13%;
+  padding-top: 10px;
 }
 
 .nom_plat {
@@ -128,7 +131,7 @@ header #icone_fleche a {
   justify-content: center;
   width: 50%;
   border-radius: 25px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#9356DC, #FF79DA);
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -137,12 +140,13 @@ header #icone_fleche a {
   text-decoration: none;
 }
 
-a #btn {
-  text-decoration: none;
-}
-
 a:hover #btn {
   box-shadow: grey 2px 2px 10px;
+  background: #ff93e1;
+}
+
+#intro a {
+  text-decoration: none;
 }
 
 body {
@@ -152,10 +156,6 @@ body {
 
 h1 {
   font-family: "Shrikhand", cursive;
-}
-
-p {
-  font-size: 20px;
 }
 
 footer {
