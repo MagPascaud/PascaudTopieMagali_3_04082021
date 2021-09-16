@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Sur les tablettes et PC, quand la largeur de la fenêtre fait plus de 480px */
 footer a {
   color: white;
   font-family: "Roboto", sans-serif;

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Sur les tablettes et PC, quand la largeur de la fenêtre fait plus de 480px */
 header {
   display: flex;
   flex-direction: row;
@@ -73,6 +75,41 @@ a:hover #btn {
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
+}
+@media all and (min-width: 480px) {
+  body #localisation i {
+    position: inherit;
+    margin-right: 20px;
+  }
+  body .intro_fonctionnement {
+    text-align: center;
+    margin: 50px;
+  }
+  body #fonctionnement_bloc {
+    width: 60%;
+    margin: auto;
+  }
+  body .fonctionnement .fonctionnement_numero {
+    position: inherit;
+    margin: 10px;
+  }
+  body .fonctionnement i {
+    position: inherit;
+    margin-right: 20px;
+  }
+  body .restaurant .restaurant_intro {
+    text-align: center;
+    margin: 50px;
+  }
+  body .restaurant .restaurant_bloc {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  body .restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
+    position: absolute;
+    right: unset;
+  }
 }
 
 footer {
