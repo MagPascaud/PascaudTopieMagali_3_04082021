@@ -110,6 +110,17 @@ body {
     position: absolute;
     right: unset;
   }
+  body footer {
+    align-items: center;
+  }
+  body main {
+    width: 60%;
+    margin: auto;
+  }
+  body header i {
+    position: inherit;
+    margin-right: 20px;
+  }
 }
 
 footer {

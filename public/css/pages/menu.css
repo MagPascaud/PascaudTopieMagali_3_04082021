@@ -155,6 +155,52 @@ body {
   font-family: "Roboto", sans-serif;
   margin: auto;
 }
+@media all and (min-width: 480px) {
+  body #localisation i {
+    position: inherit;
+    margin-right: 20px;
+  }
+  body .intro_fonctionnement {
+    text-align: center;
+    margin: 50px;
+  }
+  body #fonctionnement_bloc {
+    width: 60%;
+    margin: auto;
+  }
+  body .fonctionnement .fonctionnement_numero {
+    position: inherit;
+    margin: 10px;
+  }
+  body .fonctionnement i {
+    position: inherit;
+    margin-right: 20px;
+  }
+  body .restaurant .restaurant_intro {
+    text-align: center;
+    margin: 50px;
+  }
+  body .restaurant .restaurant_bloc {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  body .restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
+    position: absolute;
+    right: unset;
+  }
+  body footer {
+    align-items: center;
+  }
+  body main {
+    width: 60%;
+    margin: auto;
+  }
+  body header i {
+    position: inherit;
+    margin-right: 20px;
+  }
+}
 
 h1 {
   font-family: "Shrikhand", cursive;

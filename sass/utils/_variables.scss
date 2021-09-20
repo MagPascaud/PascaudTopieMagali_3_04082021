@@ -7,6 +7,7 @@ $color_fond_gris: #F6F6F6;
 /* Sur les tablettes et PC, quand la largeur de la fenêtre fait plus de 480px */
 @mixin responsive {
     @media all and (min-width: 480px) {
+// sur la homepage
         #localisation i {
             position:inherit;
             margin-right: 20px;
@@ -46,6 +47,17 @@ $color_fond_gris: #F6F6F6;
                 right: unset;
         }
     }
+    footer {
+        align-items: center;
     }
-    
+// sur les pages menus
+main {
+    width: 60%;
+    margin: auto;
+}
+header i {
+    position: inherit;
+    margin-right: 20px;
+}
+    }
 }

@@ -9,6 +9,7 @@
 body {
     font-family:'Roboto', sans-serif;
     margin: auto;
+    @include responsive;
 }
 h1 {
     font-family: 'Shrikhand', cursive;;
