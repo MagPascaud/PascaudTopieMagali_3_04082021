@@ -165,7 +165,7 @@ body {
     margin: 50px;
   }
   body #fonctionnement_bloc {
-    width: 60%;
+    width: 80%;
     margin: auto;
   }
   body .fonctionnement .fonctionnement_numero {
@@ -176,12 +176,15 @@ body {
     position: inherit;
     margin-right: 20px;
   }
+  body .restaurant {
+    width: 100%;
+  }
   body .restaurant .restaurant_intro {
     text-align: center;
     margin: 50px;
   }
   body .restaurant .restaurant_bloc {
-    width: 60%;
+    width: 90%;
     margin: auto;
     margin-bottom: 20px;
   }
@@ -193,12 +196,15 @@ body {
     align-items: center;
   }
   body main {
-    width: 60%;
+    width: 80%;
     margin: auto;
   }
   body header i {
     position: inherit;
     margin-right: 20px;
+  }
+  body .plat {
+    margin-bottom: 30px;
   }
 }
 

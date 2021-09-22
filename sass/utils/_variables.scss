@@ -17,7 +17,7 @@ $color_fond_gris: #F6F6F6;
             margin: 50px;
         }
         #fonctionnement_bloc {
-            width: 60%;
+            width: 80%;
             margin: auto;
         }
         .fonctionnement {
@@ -31,12 +31,13 @@ $color_fond_gris: #F6F6F6;
             margin-right: 20px;
         }
         .restaurant {
+            width: 100%;
             .restaurant_intro {
             text-align: center;
             margin: 50px;
         }
             .restaurant_bloc {
-                width: 60%;
+                width: 90%;
                 margin: auto;
                 margin-bottom: 20px;
             }
@@ -52,12 +53,17 @@ $color_fond_gris: #F6F6F6;
     }
 // sur les pages menus
 main {
-    width: 60%;
+    width: 80%;
     margin: auto;
 }
+
 header i {
     position: inherit;
     margin-right: 20px;
+}
+.plat {
+    margin-bottom: 30px;
+
 }
     }
 }

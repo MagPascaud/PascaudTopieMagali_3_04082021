@@ -150,6 +150,12 @@ footer {
     color: black;
     text-decoration: none;
 }
-a:active .restaurant_bloc_gauche {
+.restaurant_bloc a:hover {
+    box-shadow: 2px 2px 4px 4px darken($color_fond_gris, $amount: 45);
+}
+a:focus .restaurant_bloc_gauche {
+    color: darken($color_tertaire, $amount: 45);
+}
+a:hover .restaurant_bloc_gauche {
     color: darken($color_tertaire, $amount: 45);
 }
