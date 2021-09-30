@@ -2,7 +2,6 @@
 /* Sur les tablettes et PC, quand la largeur de la fenêtre fait plus de 480px */
 footer a {
   color: white;
-  font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
 
@@ -24,11 +23,72 @@ footer div {
   margin: 5px 0 5px 0;
 }
 
-/*police*/
-@font-face {
-  font-family: "robotomedium";
-  src: url("../base/roboto_medium_macroman/Roboto-Medium-webfont.ttf");
+body {
+  font-family: "Roboto";
+  margin: auto;
 }
+@media all and (min-width: 480px) {
+  body #localisation i {
+    position: inherit;
+    margin-right: 20px;
+  }
+  body .intro_fonctionnement {
+    text-align: center;
+    margin: 50px;
+  }
+  body #fonctionnement_bloc {
+    width: 80%;
+    margin: auto;
+  }
+  body .fonctionnement .fonctionnement_numero {
+    position: inherit;
+    margin: 10px;
+  }
+  body .fonctionnement i {
+    position: inherit;
+    margin-right: 20px;
+  }
+  body .restaurant {
+    width: auto;
+    padding: 0 20px 20px 20px;
+  }
+  body .restaurant .restaurant_intro {
+    text-align: center;
+    margin: 50px;
+  }
+  body .restaurant .restaurant_bloc {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  body .restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
+    position: absolute;
+    right: unset;
+  }
+  body footer {
+    align-items: center;
+  }
+  body main {
+    width: 80%;
+    margin: auto;
+  }
+  body header i {
+    position: inherit;
+    margin-right: 20px;
+  }
+  body .plat {
+    margin-bottom: 30px;
+  }
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -151,74 +211,9 @@ a:hover #btn {
   text-decoration: none;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  margin: auto;
-}
-@media all and (min-width: 480px) {
-  body #localisation i {
-    position: inherit;
-    margin-right: 20px;
-  }
-  body .intro_fonctionnement {
-    text-align: center;
-    margin: 50px;
-  }
-  body #fonctionnement_bloc {
-    width: 80%;
-    margin: auto;
-  }
-  body .fonctionnement .fonctionnement_numero {
-    position: inherit;
-    margin: 10px;
-  }
-  body .fonctionnement i {
-    position: inherit;
-    margin-right: 20px;
-  }
-  body .restaurant {
-    width: 100%;
-  }
-  body .restaurant .restaurant_intro {
-    text-align: center;
-    margin: 50px;
-  }
-  body .restaurant .restaurant_bloc {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-  body .restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
-    position: absolute;
-    right: unset;
-  }
-  body footer {
-    align-items: center;
-  }
-  body main {
-    width: 80%;
-    margin: auto;
-  }
-  body header i {
-    position: inherit;
-    margin-right: 20px;
-  }
-  body .plat {
-    margin-bottom: 30px;
-  }
-}
-
 h1 {
-  font-family: "Shrikhand", cursive;
-}
-
-footer {
-  background-color: #353535;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Shrikhand";
+  font-size: 1.8em;
 }
 
 /*# sourceMappingURL=menu.css.map */

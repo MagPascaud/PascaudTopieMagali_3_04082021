@@ -1,10 +1,12 @@
-/*police*/
-
-@font-face {
-    font-family: 'robotomedium';
-    src: url('../base/roboto_medium_macroman/Roboto-Medium-webfont.ttf');
+@import "../layouts/mediaqueries";
+@import "../utils/variables";
+@import "../layouts/footer";
+body {
+    font-family: $body_font;
+    margin: auto;
+    @include responsive;
 }
 
-@media screen and (max-width: 480px) {
-    
+footer {
+    @include footer;
 }

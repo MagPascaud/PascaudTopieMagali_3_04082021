@@ -1,17 +1,9 @@
 @import "../utils/_variables";
 @import "../layouts/header";
-@import "../layouts/footer";
 @import "../base/base";
 @import "../component/btn";
 
-body {
-    font-family:'Roboto', sans-serif;
-    margin: auto;
-    @include responsive;
-}
-footer {
-    @include footer;
-}
+
 #icone_fleche {
     display: none;
 }

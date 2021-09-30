@@ -1,0 +1,64 @@
+/* Sur les tablettes et PC, quand la largeur de la fenêtre fait plus de 480px */
+@mixin responsive {
+    @media all and (min-width: 480px) {
+// sur la homepage
+        #localisation i {
+            position:inherit;
+            margin-right: 20px;
+        }
+        .intro_fonctionnement {
+            text-align: center;
+            margin: 50px;
+        }
+        #fonctionnement_bloc {
+            width: 80%;
+            margin: auto;
+        }
+        .fonctionnement {
+            .fonctionnement_numero {
+                position: inherit;
+                margin: 10px;
+            }
+        }
+        .fonctionnement i {
+            position: inherit;
+            margin-right: 20px;
+        }
+        .restaurant {
+            width: auto;
+            padding: 0 20px 20px 20px;
+            .restaurant_intro {
+            text-align: center;
+            margin: 50px;
+        }
+            .restaurant_bloc {
+                width: 90%;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+        }
+        .restaurant_bloc_nouveau {
+            .restaurant_bloc_nouveau_vert {
+                position: absolute;
+                right: unset;
+        }
+    }
+    footer {
+        align-items: center;
+    }
+// sur les pages menus
+main {
+    width: 80%;
+    margin: auto;
+}
+
+header i {
+    position: inherit;
+    margin-right: 20px;
+}
+.plat {
+    margin-bottom: 30px;
+
+}
+    }
+}

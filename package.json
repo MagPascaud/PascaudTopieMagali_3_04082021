@@ -4,7 +4,8 @@
   "description": "A test for npm",
   "main": "app.js",
   "scripts": {
-    "sass": "sass --watch ./sass/:public/css/"
+    "sass": "sass --watch ./sass/:public/css/",
+    "prefix": "postcss ./public/css/ --use autoprefixer -d ./public/css/prefixed/"
   },
   "keywords": [
     "test",
@@ -12,7 +13,5 @@
   ],
   "author": "yangqiang5@wanda.cn",
   "license": "MIT",
-  "dependencies": {
-    "sass": "^1.37.5"
-  }
+  "browserslist": "last 4 versions"
 }

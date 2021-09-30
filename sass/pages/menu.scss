@@ -1,22 +1,13 @@
-@import "../utils/_variables";
-@import "../layouts/footer";
+@import "../utils/variables";
 @import "../base/base";
 @import "../layouts/menu-type";
 @import "../layouts/header";
 @import "../component/btn";
 
 
-body {
-    font-family:'Roboto', sans-serif;
-    margin: auto;
-    @include responsive;
-}
 h1 {
-    font-family: 'Shrikhand', cursive;;
+    font-family: $title_font;
+    font-size: 1.8em;
 }
-footer {
-    @include footer;
-}
-
 
 
