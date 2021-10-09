@@ -204,7 +204,7 @@ header #icone_fleche a {
 
 a:hover #btn {
   box-shadow: grey 2px 2px 10px;
-  background: #ff93e1;
+  filter: brightness(1.2);
 }
 
 #intro a {

@@ -14,7 +14,8 @@
 } 
 a:hover #btn {
     box-shadow: grey 2px 2px 10px;
-    background: lighten($color_secondaire, $amount: 5);
+    // background: lighten($color_secondaire, $amount: 5);
+    filter: brightness(1.2);
 }
 #intro a {
     text-decoration: none;

@@ -1,0 +1,9 @@
+@import "../utils/_variables";
+
+.restaurant_bloc_coeur i {
+    color:linear-gradient(to right, $color_secondaire, $color_primaire);
+}
+.restaurant_bloc_coeur {
+    font-size: 1.5em;
+    padding: 10px;
+}

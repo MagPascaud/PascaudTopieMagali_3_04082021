@@ -2,6 +2,8 @@
 @import "../layouts/header";
 @import "../base/base";
 @import "../component/btn";
+@import "../component/fonctionnement";
+@import "../component/coeur";
 
 
 #icone_fleche {
@@ -39,41 +41,7 @@
     font-weight: bold;
     font-size: 1.2em;
 }
-.fonctionnement {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    background-color: $color_fond_gris;
-    margin: 20px;
-    padding: 25px 15px 25px 15px;
-    box-shadow: 2px 4px 4px 2px rgb(230, 221, 221);
-    font-size: 0.9em;
-    font-weight: bold;
-    .fonctionnement_numero {
-        position: absolute;
-        left: 10px;
-        color: white;
-        font-weight: lighter;
-        font-size: 0.8em;
-        border-radius: 30px;
-        width: 20px;
-        height: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        background-color: $color_primaire;
-    }
-}
-.fonctionnement i {
-    position: absolute;
-    left: 60px;
-    color: grey;
-    font-size: 1.2em;
-}
+
 .restaurant {
     display: flex;
     flex-direction: column;
@@ -101,14 +69,8 @@
         margin: 10px 0;
         border-radius: 15px;
         box-shadow: 2px 4px 4px 2px rgb(230, 221, 221);
-        .restaurant_bloc_coeur {
-            font-size: 1.5em;
-            padding: 10px;
-        }
     }
-    .restaurant_bloc_coeur i {
-        color:fade-in($color_primaire, $amount: 0);
-    }
+    
     .restaurant_intro {
         font-size: 1.2em;
         font-weight: bold;
