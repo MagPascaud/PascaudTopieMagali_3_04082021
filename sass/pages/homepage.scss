@@ -68,7 +68,7 @@
         background-color: white;
         margin: 10px 0;
         border-radius: 15px;
-        box-shadow: 2px 4px 4px 2px rgb(230, 221, 221);
+        box-shadow: 2px 2px 10px $color_fond_gris;
     }
     
     .restaurant_intro {
@@ -85,9 +85,9 @@
         right: 30px;
         margin: 10px;
         border-radius: 2px;
-        background-color: $color_tertaire;
+        background-color: $color_tertiaire;
         padding: 5px 10px;
-        color: darken($color_tertaire, $amount: 45);
+        color: darken($color_tertiaire, $amount: 45);
         font-weight: bold;
     }
 }
@@ -104,12 +104,12 @@
     color: black;
     text-decoration: none;
 }
-.restaurant_bloc a:hover {
-    box-shadow: 2px 2px 4px 4px darken($color_fond_gris, $amount: 45);
+a:hover .restaurant_bloc {
+    box-shadow: 4px 4px 10px $color_fond_gris_hover;
 }
 a:focus .restaurant_bloc_gauche {
-    color: darken($color_tertaire, $amount: 45);
+    color: darken($color_tertiaire, $amount: 45);
 }
 a:hover .restaurant_bloc_gauche {
-    color: darken($color_tertaire, $amount: 45);
+    color: darken($color_tertiaire, $amount: 45);
 }

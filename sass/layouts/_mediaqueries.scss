@@ -1,7 +1,8 @@
-/* Sur les tablettes et PC, quand la largeur de la fenêtre fait plus de 480px */
+/* Sur les tablettes, quand la largeur de la fenêtre fait entre 480px et 1024px */
 @mixin responsive {
-    @media all and (min-width: 480px) {
+    @media all and (min-width: 480px) and (max-width: 1024px) {
 // sur la homepage
+        
         #localisation i {
             position:inherit;
             margin-right: 20px;
@@ -11,18 +12,29 @@
             margin: 50px;
         }
         #fonctionnement_bloc {
-            width: 80%;
-            margin: auto;
-        }
-        .fonctionnement {
-            .fonctionnement_numero {
-                position: inherit;
-                margin: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 15px;
+            .fonctionnement {
+                padding: 25px 10px;
+                margin: auto;
+                width: 25%;
+                .fonctionnement_numero {
+                    margin: 5px;
+                    position: inherit;
+                }
             }
         }
         .fonctionnement i {
-            position: inherit;
+            position: unset;
             margin-right: 20px;
+        }
+        #restaurant-bloc {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
         .restaurant {
             width: auto;
@@ -31,11 +43,9 @@
             text-align: center;
             margin: 50px;
         }
-            .restaurant_bloc {
-                width: 90%;
-                margin: auto;
-                margin-bottom: 20px;
-            }
+        .restaurant_bloc {
+            width: 45%;
+        }
         }
         .restaurant_bloc_nouveau {
             .restaurant_bloc_nouveau_vert {
@@ -48,7 +58,7 @@
     }
 // sur les pages menus
 main {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -60,5 +70,84 @@ header i {
     margin-bottom: 30px;
 
 }
+.bloc_plat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+    }
+}    
+/* Sur PC, quand la largeur de la fenêtre fait plus de 1024px */
+@media screen and (min-width: 1024px){
+// sur la homepage
+        
+#localisation i {
+    position:inherit;
+    margin-right: 20px;
+}
+.intro_fonctionnement {
+    text-align: center;
+    margin: 50px;
+}
+#fonctionnement_bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+    .fonctionnement {
+        padding: 25px 10px;
+        margin: auto;
+        width: 300px;
+        .fonctionnement_numero {
+            margin: 5px;
+            position: inherit;
+        }
     }
 }
+.fonctionnement i {
+    position: unset;
+    margin-right: 20px;
+}
+#restaurant-bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.restaurant {
+    width: auto;
+    padding: 0 20px 20px 20px;
+    .restaurant_intro {
+    text-align: center;
+    margin: 50px;
+}
+.restaurant_bloc {
+    width: 45%;
+}
+}
+.restaurant_bloc_nouveau {
+    .restaurant_bloc_nouveau_vert {
+        position: absolute;
+        right: unset;
+}
+}
+footer {
+align-items: center;
+}
+
+
+// sur les pages menus
+.bloc_plat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+}
+
+
+

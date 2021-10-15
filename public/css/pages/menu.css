@@ -1,5 +1,73 @@
 @charset "UTF-8";
-/* Sur les tablettes et PC, quand la largeur de la fenêtre fait plus de 480px */
+/* Sur les tablettes, quand la largeur de la fenêtre fait entre 480px et 1024px */
+/* Sur PC, quand la largeur de la fenêtre fait plus de 1024px */
+@media screen and (min-width: 1024px) {
+  #localisation i {
+    position: inherit;
+    margin-right: 20px;
+  }
+
+  .intro_fonctionnement {
+    text-align: center;
+    margin: 50px;
+  }
+
+  #fonctionnement_bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+  }
+  #fonctionnement_bloc .fonctionnement {
+    padding: 25px 10px;
+    margin: auto;
+    width: 300px;
+  }
+  #fonctionnement_bloc .fonctionnement .fonctionnement_numero {
+    margin: 5px;
+    position: inherit;
+  }
+
+  .fonctionnement i {
+    position: unset;
+    margin-right: 20px;
+  }
+
+  #restaurant-bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .restaurant {
+    width: auto;
+    padding: 0 20px 20px 20px;
+  }
+  .restaurant .restaurant_intro {
+    text-align: center;
+    margin: 50px;
+  }
+  .restaurant .restaurant_bloc {
+    width: 45%;
+  }
+
+  .restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
+    position: absolute;
+    right: unset;
+  }
+
+  footer {
+    align-items: center;
+  }
+
+  .bloc_plat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 footer a {
   color: white;
   text-decoration: none;
@@ -27,7 +95,7 @@ body {
   font-family: "Roboto";
   margin: auto;
 }
-@media all and (min-width: 480px) {
+@media all and (min-width: 480px) and (max-width: 1024px) {
   body #localisation i {
     position: inherit;
     margin-right: 20px;
@@ -37,16 +105,29 @@ body {
     margin: 50px;
   }
   body #fonctionnement_bloc {
-    width: 80%;
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
   }
-  body .fonctionnement .fonctionnement_numero {
+  body #fonctionnement_bloc .fonctionnement {
+    padding: 25px 10px;
+    margin: auto;
+    width: 25%;
+  }
+  body #fonctionnement_bloc .fonctionnement .fonctionnement_numero {
+    margin: 5px;
     position: inherit;
-    margin: 10px;
   }
   body .fonctionnement i {
-    position: inherit;
+    position: unset;
     margin-right: 20px;
+  }
+  body #restaurant-bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   body .restaurant {
     width: auto;
@@ -57,9 +138,7 @@ body {
     margin: 50px;
   }
   body .restaurant .restaurant_bloc {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 20px;
+    width: 45%;
   }
   body .restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
     position: absolute;
@@ -69,7 +148,7 @@ body {
     align-items: center;
   }
   body main {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
   body header i {
@@ -78,6 +157,12 @@ body {
   }
   body .plat {
     margin-bottom: 30px;
+  }
+  body .bloc_plat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
@@ -131,21 +216,6 @@ footer {
 
 #titre_menu i {
   font-size: 25px;
-}
-
-.fond_bleu {
-  background-color: #99E2D0;
-  border: none;
-  width: 65px;
-  border-radius: 0 15px 15px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.fond_bleu i {
-  color: white;
 }
 
 h2 {
@@ -209,6 +279,21 @@ a:hover #btn {
 
 #intro a {
   text-decoration: none;
+}
+
+.fond_bleu {
+  background-color: #99E2D0;
+  border: none;
+  width: 65px;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fond_bleu i {
+  color: white;
 }
 
 h1 {
