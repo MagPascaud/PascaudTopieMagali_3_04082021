@@ -24,7 +24,7 @@
     width: 300px;
   }
   #fonctionnement_bloc .fonctionnement .fonctionnement_numero {
-    margin: 5px;
+    margin: 10px;
     position: inherit;
   }
 
@@ -61,11 +61,36 @@
     align-items: center;
   }
 
+  #icone_fleche {
+    position: relative;
+  }
+
   .bloc_plat {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .image_menu img {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+  }
+
+  .bloc_plat_column {
+    width: 30%;
+  }
+
+  .plat {
+    margin-bottom: 20px;
+  }
+
+  #titre_menu {
+    justify-content: center;
+  }
+  #titre_menu h1 {
+    margin-right: 20px;
   }
 }
 footer a {
@@ -155,6 +180,11 @@ body {
     position: inherit;
     margin-right: 20px;
   }
+  body .image_menu img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+  }
   body .plat {
     margin-bottom: 30px;
   }
@@ -162,7 +192,17 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+  body #titre_menu {
+    justify-content: center;
+  }
+  body #titre_menu h1 {
+    margin-right: 20px;
+  }
+  body .menu {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -281,6 +321,10 @@ a:hover #btn {
   text-decoration: none;
 }
 
+.menu a {
+  text-decoration: none;
+}
+
 .fond_bleu {
   background-color: #99E2D0;
   border: none;
@@ -296,6 +340,100 @@ a:hover #btn {
   color: white;
 }
 
+/* Sur les tablettes, quand la largeur de la fenêtre fait entre 480px et 1024px */
+/* Sur PC, quand la largeur de la fenêtre fait plus de 1024px */
+@media screen and (min-width: 1024px) {
+  #localisation i {
+    position: inherit;
+    margin-right: 20px;
+  }
+
+  .intro_fonctionnement {
+    text-align: center;
+    margin: 50px;
+  }
+
+  #fonctionnement_bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+  }
+  #fonctionnement_bloc .fonctionnement {
+    padding: 25px 10px;
+    margin: auto;
+    width: 300px;
+  }
+  #fonctionnement_bloc .fonctionnement .fonctionnement_numero {
+    margin: 10px;
+    position: inherit;
+  }
+
+  .fonctionnement i {
+    position: unset;
+    margin-right: 20px;
+  }
+
+  #restaurant-bloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .restaurant {
+    width: auto;
+    padding: 0 20px 20px 20px;
+  }
+  .restaurant .restaurant_intro {
+    text-align: center;
+    margin: 50px;
+  }
+  .restaurant .restaurant_bloc {
+    width: 45%;
+  }
+
+  .restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
+    position: absolute;
+    right: unset;
+  }
+
+  footer {
+    align-items: center;
+  }
+
+  #icone_fleche {
+    position: relative;
+  }
+
+  .bloc_plat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .image_menu img {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+  }
+
+  .bloc_plat_column {
+    width: 30%;
+  }
+
+  .plat {
+    margin-bottom: 20px;
+  }
+
+  #titre_menu {
+    justify-content: center;
+  }
+  #titre_menu h1 {
+    margin-right: 20px;
+  }
+}
 h1 {
   font-family: "Shrikhand";
   font-size: 1.8em;
