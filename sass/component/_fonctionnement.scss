@@ -12,9 +12,10 @@
     box-shadow: 2px 4px 4px 2px rgb(230, 221, 221);
     font-size: 0.9em;
     font-weight: bold;
+    position: relative;
     .fonctionnement_numero {
         position: absolute;
-        left: 10px;
+        left: -10px;
         color: white;
         font-weight: lighter;
         font-size: 0.8em;
@@ -31,7 +32,7 @@
 }
 .fonctionnement i {
     position: absolute;
-    left: 60px;
+    left: 40px;
     color: grey;
     font-size: 1.2em;
 }

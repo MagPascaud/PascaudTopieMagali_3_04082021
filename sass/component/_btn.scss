@@ -13,7 +13,8 @@
     text-decoration: none;
 } 
 a:hover #btn {
-    box-shadow: grey 2px 2px 10px;
+    box-shadow: 4px 8px 8px 4px darken($color_fond_gris_hover, $amount: 20);
+    
     // background: lighten($color_secondaire, $amount: 5);
     filter: brightness(1.2);
 }
@@ -23,3 +24,4 @@ a:hover #btn {
 .menu a {
     text-decoration: none;
 }
+

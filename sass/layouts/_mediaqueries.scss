@@ -14,21 +14,19 @@
     #fonctionnement_bloc {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      margin: 15px;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      
       .fonctionnement {
-        padding: 25px 10px;
-        margin: auto;
-        width: 25%;
-        .fonctionnement_numero {
-          margin: 5px;
-          position: inherit;
-        }
+        margin: 20px 10px;
+        width: auto;
       }
     }
     .fonctionnement i {
       position: unset;
-      margin-right: 20px;
+      margin-right: 10px;
+      
     }
     #restaurant-bloc {
       display: flex;
@@ -78,7 +76,10 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
+    }
+    .bloc_plat_column {
+      min-width: 49%;
     }
     #titre_menu {
         justify-content: center;
@@ -90,10 +91,17 @@
           padding-left: 20px;
           padding-right: 20px;
       }
+      #btn {
+        width: 200px;
+      }
   }
 }
 /* Sur PC, quand la largeur de la fenêtre fait plus de 1024px */
 @media screen and (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
   // sur la homepage
 
   #localisation i {
@@ -114,8 +122,8 @@
       margin: auto;
       width: 300px;
       .fonctionnement_numero {
-        margin: 10px;
-        position: inherit;
+        left: -10px;
+        
       }
     }
   }
@@ -153,6 +161,7 @@
   // sur les pages menus
   #icone_fleche {
     position: relative;
+    left: unset;
   }
   .bloc_plat {
     display: flex;
@@ -176,5 +185,8 @@
     h1 {
       margin-right: 20px;
     }
+  }
+  #btn {
+    width: 200px;
   }
 }

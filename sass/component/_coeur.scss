@@ -1,9 +1,20 @@
 @import "../utils/_variables";
 
-.restaurant_bloc_coeur i {
-    color:linear-gradient(to right, $color_secondaire, $color_primaire);
-}
+
 .restaurant_bloc_coeur {
-    font-size: 1.5em;
+    .fas {
+        display: none;
+    }
+    font-size: 1.2em;
     padding: 10px;
+}
+
+.restaurant_bloc_coeur:hover {
+    .fas {
+        display: block;
+        color: $color_primaire;
+    }
+    .far {
+        display: none;
+    }
 }
