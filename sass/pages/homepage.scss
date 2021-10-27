@@ -5,6 +5,7 @@
 @import "../component/fonctionnement";
 @import "../component/coeur";
 @import "../layouts/mediaqueries";
+@import "../component/animation";
 
 #icone_fleche {
     display: none;
@@ -107,10 +108,4 @@
 }
 a:hover .restaurant_bloc {
     box-shadow: 4px 4px 10px $color_fond_gris_hover;
-}
-a:focus .restaurant_bloc_gauche {
-    color: darken($color_tertiaire, $amount: 45);
-}
-a:hover .restaurant_bloc_gauche {
-    color: darken($color_tertiaire, $amount: 45);
 }

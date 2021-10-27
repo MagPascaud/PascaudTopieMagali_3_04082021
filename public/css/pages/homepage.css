@@ -318,6 +318,83 @@ a:hover #btn {
   color: #9356DC;
 }
 
+@keyframes animation-delay {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.animation_delay1 {
+  opacity: 0;
+  animation: animation-delay 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.animation_delay2 {
+  opacity: 0;
+  animation: animation-delay 1000ms 500ms;
+  animation-fill-mode: forwards;
+}
+
+.animation_delay3 {
+  opacity: 0;
+  animation: animation-delay 1000ms 1000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes coche {}
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes fondu {
+  to {
+    visibility: hidden;
+  }
+}
+#loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  animation: fondu 0s ease-in 4.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(169, 169, 169, 0.5);
+  z-index: 3;
+  overflow: hidden;
+}
+
+#loader_cercle {
+  width: 150px;
+  height: 150px;
+  border: 15px solid #c9abee;
+  border-top: 15px solid #FF79DA;
+  border-radius: 50%;
+  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s;
+  z-index: 3;
+}
+
+@keyframes color_change {
+  from {
+    color: white;
+  }
+  to {
+    color: #9356DC;
+  }
+}
 .restaurant_bloc_coeur {
   font-size: 1.2em;
   padding: 10px;
@@ -325,10 +402,9 @@ a:hover #btn {
 .restaurant_bloc_coeur .fas {
   display: none;
 }
-
 .restaurant_bloc_coeur:hover .fas {
   display: block;
-  color: #9356DC;
+  animation: color_change 2s infinite;
 }
 .restaurant_bloc_coeur:hover .far {
   display: none;
@@ -435,6 +511,83 @@ a:hover #btn {
 
   #btn {
     width: 200px;
+  }
+}
+@keyframes animation-delay {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.animation_delay1 {
+  opacity: 0;
+  animation: animation-delay 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.animation_delay2 {
+  opacity: 0;
+  animation: animation-delay 1000ms 500ms;
+  animation-fill-mode: forwards;
+}
+
+.animation_delay3 {
+  opacity: 0;
+  animation: animation-delay 1000ms 1000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes coche {}
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes fondu {
+  to {
+    visibility: hidden;
+  }
+}
+#loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  animation: fondu 0s ease-in 4.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(169, 169, 169, 0.5);
+  z-index: 3;
+  overflow: hidden;
+}
+
+#loader_cercle {
+  width: 150px;
+  height: 150px;
+  border: 15px solid #c9abee;
+  border-top: 15px solid #FF79DA;
+  border-radius: 50%;
+  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s;
+  z-index: 3;
+}
+
+@keyframes color_change {
+  from {
+    color: white;
+  }
+  to {
+    color: #9356DC;
   }
 }
 #icone_fleche {
@@ -544,14 +697,6 @@ a:hover #btn {
 
 a:hover .restaurant_bloc {
   box-shadow: 4px 4px 10px #F5EDFF;
-}
-
-a:focus .restaurant_bloc_gauche {
-  color: #217460;
-}
-
-a:hover .restaurant_bloc_gauche {
-  color: #217460;
 }
 
 /*# sourceMappingURL=homepage.css.map */

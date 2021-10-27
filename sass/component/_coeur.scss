@@ -1,20 +1,21 @@
 @import "../utils/_variables";
-
+@import "../component/animation";
 
 .restaurant_bloc_coeur {
-    .fas {
-        display: none;
-    }
-    font-size: 1.2em;
-    padding: 10px;
-}
+  .fas {
+    display: none;
+    
+  }
+  font-size: 1.2em;
+  padding: 10px;
 
-.restaurant_bloc_coeur:hover {
+  &:hover {
     .fas {
-        display: block;
-        color: $color_primaire;
+      display: block;
+      animation: color_change 2s infinite;
     }
     .far {
-        display: none;
+      display: none;
     }
+  }
 }
