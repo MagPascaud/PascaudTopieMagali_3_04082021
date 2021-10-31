@@ -1,5 +1,10 @@
 @import "../utils/_variables";
+@import "../component/animation";
 
+.plat:hover {
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
 .fond_bleu {
     background-color: $color_tertiaire;
     border: none;
@@ -9,6 +14,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    animation: coche .5s ease-in-out;
+    transition-property: margin-right;
+    overflow: hidden;
+    
+}
+
+.fond_bleu i {
+    animation: rotate 0.5s ease-in-out;
+    rotate: 90deg;
+}
 }
 .fond_bleu i {
     color: white;

@@ -1,3 +1,4 @@
+
 // Animation du décalage d'apparition des plats
 @keyframes animation-delay {
     0% {
@@ -26,7 +27,23 @@
 }
 // animation de la coche coulissante
 @keyframes coche {
-    
+    0% {
+        transform: translateX(100%); 
+        
+    }
+    100% {
+        transform: translateX(0%);
+        
+        
+    }    
+}
+@keyframes rotate {
+    from {
+        transform: rotate(90deg)
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }
 // animation loader
 @keyframes load {
@@ -40,44 +57,47 @@
     }
 }
 @keyframes fondu {
+    from {
+        visibility: visible;
+    }
     to {
-        
-    
         visibility: hidden;
     }
-   
 }
-    
 #loader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    animation: fondu 0s ease-in 4.5s;   
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    animation: 3s fondu; 
+    visibility: hidden;  
     display: flex; 
     justify-content: center;
     align-items: center;
     background-color: rgba(169, 169, 169, .5);
     z-index: 3;
-    overflow: hidden;
 }
-    
-
 #loader_cercle {
     width: 150px;
     height: 150px;
     border: 15px solid lighten($color-primaire, $amount: 20);
     border-top: 15px solid $color_secondaire;
     border-radius: 50%;
-    animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s;
+    animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 3;
 }
+// Animation du remplissage du coeur
 @keyframes color_change {
-    from {
-        color: white;
+    0% {
+      background: white;
+      opacity: 0;
     }
-    to {
-        color: $color-primaire;
+    33% {
+        opacity: 0.33;
+        background: linear-gradient(to top, $color_btn);
     }
+    66% {
+        opacity: 0.66;
+        background: linear-gradient(to top, $color_btn);
+    }
+    
 }

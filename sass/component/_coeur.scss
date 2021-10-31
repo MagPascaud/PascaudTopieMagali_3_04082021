@@ -4,15 +4,20 @@
 .restaurant_bloc_coeur {
   .fas {
     display: none;
-    
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background: linear-gradient(to top, $color_btn);
+    color: white;
+    opacity: 1;
   }
   font-size: 1.2em;
   padding: 10px;
-
-  &:hover {
+  cursor: pointer;
+  &:hover, &:active {
     .fas {
       display: block;
-      animation: color_change 2s infinite;
+      animation: color_change 1s;
     }
     .far {
       display: none;

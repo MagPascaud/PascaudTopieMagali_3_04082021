@@ -245,6 +245,10 @@ footer {
   justify-content: space-between;
 }
 
+a .plat {
+  color: black;
+}
+
 .texte_gauche {
   padding: 10px 10px 0 10px;
   width: 100%;
@@ -279,10 +283,16 @@ h2 {
 
 .nom_plat {
   margin: 15px 0 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .sous-titre {
   font-weight: lighter;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .image_menu img {
@@ -336,7 +346,111 @@ a:hover #btn {
   text-decoration: none;
 }
 
-.fond_bleu {
+@keyframes animation-delay {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.animation_delay1 {
+  opacity: 0;
+  animation: animation-delay 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.animation_delay2 {
+  opacity: 0;
+  animation: animation-delay 1000ms 500ms;
+  animation-fill-mode: forwards;
+}
+
+.animation_delay3 {
+  opacity: 0;
+  animation: animation-delay 1000ms 1000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes coche {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes fondu {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+#loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  animation: 3s fondu;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(169, 169, 169, 0.5);
+  z-index: 3;
+}
+
+#loader_cercle {
+  width: 150px;
+  height: 150px;
+  border: 15px solid #c9abee;
+  border-top: 15px solid #FF79DA;
+  border-radius: 50%;
+  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 3;
+}
+
+@keyframes color_change {
+  0% {
+    background: white;
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.33;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
+  }
+  66% {
+    opacity: 0.66;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
+  }
+}
+.plat:hover {
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.plat:hover .fond_bleu {
   background-color: #99E2D0;
   border: none;
   width: 65px;
@@ -345,6 +459,13 @@ a:hover #btn {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  animation: coche 0.5s ease-in-out;
+  transition-property: margin-right;
+  overflow: hidden;
+}
+.plat:hover .fond_bleu i {
+  animation: rotate 0.5s ease-in-out;
+  rotate: 90deg;
 }
 
 .fond_bleu i {
@@ -482,7 +603,22 @@ a:hover #btn {
   animation-fill-mode: forwards;
 }
 
-@keyframes coche {}
+@keyframes coche {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 @keyframes load {
   0% {
     transform: rotate(0deg);
@@ -494,23 +630,24 @@ a:hover #btn {
   }
 }
 @keyframes fondu {
+  from {
+    visibility: visible;
+  }
   to {
     visibility: hidden;
   }
 }
 #loader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  animation: fondu 0s ease-in 4.5s;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  animation: 3s fondu;
+  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(169, 169, 169, 0.5);
   z-index: 3;
-  overflow: hidden;
 }
 
 #loader_cercle {
@@ -519,16 +656,22 @@ a:hover #btn {
   border: 15px solid #c9abee;
   border-top: 15px solid #FF79DA;
   border-radius: 50%;
-  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s;
+  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 3;
 }
 
 @keyframes color_change {
-  from {
-    color: white;
+  0% {
+    background: white;
+    opacity: 0;
   }
-  to {
-    color: #9356DC;
+  33% {
+    opacity: 0.33;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
+  }
+  66% {
+    opacity: 0.66;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
   }
 }
 @keyframes animation-delay {
@@ -559,7 +702,22 @@ a:hover #btn {
   animation-fill-mode: forwards;
 }
 
-@keyframes coche {}
+@keyframes coche {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 @keyframes load {
   0% {
     transform: rotate(0deg);
@@ -571,23 +729,24 @@ a:hover #btn {
   }
 }
 @keyframes fondu {
+  from {
+    visibility: visible;
+  }
   to {
     visibility: hidden;
   }
 }
 #loader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  animation: fondu 0s ease-in 4.5s;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  animation: 3s fondu;
+  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(169, 169, 169, 0.5);
   z-index: 3;
-  overflow: hidden;
 }
 
 #loader_cercle {
@@ -596,30 +755,43 @@ a:hover #btn {
   border: 15px solid #c9abee;
   border-top: 15px solid #FF79DA;
   border-radius: 50%;
-  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s;
+  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 3;
 }
 
 @keyframes color_change {
-  from {
-    color: white;
+  0% {
+    background: white;
+    opacity: 0;
   }
-  to {
-    color: #9356DC;
+  33% {
+    opacity: 0.33;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
+  }
+  66% {
+    opacity: 0.66;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
   }
 }
 .restaurant_bloc_coeur {
   font-size: 1.2em;
   padding: 10px;
+  cursor: pointer;
 }
 .restaurant_bloc_coeur .fas {
   display: none;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  color: white;
+  opacity: 1;
 }
-.restaurant_bloc_coeur:hover .fas {
+.restaurant_bloc_coeur:hover .fas, .restaurant_bloc_coeur:active .fas {
   display: block;
-  animation: color_change 2s infinite;
+  animation: color_change 1s;
 }
-.restaurant_bloc_coeur:hover .far {
+.restaurant_bloc_coeur:hover .far, .restaurant_bloc_coeur:active .far {
   display: none;
 }
 

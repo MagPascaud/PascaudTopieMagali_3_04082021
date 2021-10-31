@@ -346,7 +346,22 @@ a:hover #btn {
   animation-fill-mode: forwards;
 }
 
-@keyframes coche {}
+@keyframes coche {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 @keyframes load {
   0% {
     transform: rotate(0deg);
@@ -358,23 +373,24 @@ a:hover #btn {
   }
 }
 @keyframes fondu {
+  from {
+    visibility: visible;
+  }
   to {
     visibility: hidden;
   }
 }
 #loader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  animation: fondu 0s ease-in 4.5s;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  animation: 3s fondu;
+  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(169, 169, 169, 0.5);
   z-index: 3;
-  overflow: hidden;
 }
 
 #loader_cercle {
@@ -383,30 +399,43 @@ a:hover #btn {
   border: 15px solid #c9abee;
   border-top: 15px solid #FF79DA;
   border-radius: 50%;
-  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s;
+  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 3;
 }
 
 @keyframes color_change {
-  from {
-    color: white;
+  0% {
+    background: white;
+    opacity: 0;
   }
-  to {
-    color: #9356DC;
+  33% {
+    opacity: 0.33;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
+  }
+  66% {
+    opacity: 0.66;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
   }
 }
 .restaurant_bloc_coeur {
   font-size: 1.2em;
   padding: 10px;
+  cursor: pointer;
 }
 .restaurant_bloc_coeur .fas {
   display: none;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  color: white;
+  opacity: 1;
 }
-.restaurant_bloc_coeur:hover .fas {
+.restaurant_bloc_coeur:hover .fas, .restaurant_bloc_coeur:active .fas {
   display: block;
-  animation: color_change 2s infinite;
+  animation: color_change 1s;
 }
-.restaurant_bloc_coeur:hover .far {
+.restaurant_bloc_coeur:hover .far, .restaurant_bloc_coeur:active .far {
   display: none;
 }
 
@@ -541,7 +570,22 @@ a:hover #btn {
   animation-fill-mode: forwards;
 }
 
-@keyframes coche {}
+@keyframes coche {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 @keyframes load {
   0% {
     transform: rotate(0deg);
@@ -553,23 +597,24 @@ a:hover #btn {
   }
 }
 @keyframes fondu {
+  from {
+    visibility: visible;
+  }
   to {
     visibility: hidden;
   }
 }
 #loader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  animation: fondu 0s ease-in 4.5s;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  animation: 3s fondu;
+  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(169, 169, 169, 0.5);
   z-index: 3;
-  overflow: hidden;
 }
 
 #loader_cercle {
@@ -578,16 +623,22 @@ a:hover #btn {
   border: 15px solid #c9abee;
   border-top: 15px solid #FF79DA;
   border-radius: 50%;
-  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.5s;
+  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 3;
 }
 
 @keyframes color_change {
-  from {
-    color: white;
+  0% {
+    background: white;
+    opacity: 0;
   }
-  to {
-    color: #9356DC;
+  33% {
+    opacity: 0.33;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
+  }
+  66% {
+    opacity: 0.66;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
   }
 }
 #icone_fleche {
