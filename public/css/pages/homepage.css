@@ -205,8 +205,6 @@ body {
     margin-right: 20px;
   }
   body .image_menu img {
-    object-fit: cover;
-    width: 100%;
     height: 300px;
   }
   body .plat {
@@ -347,16 +345,18 @@ a:hover #btn {
 }
 
 @keyframes coche {
-  0% {
+  from {
     transform: translateX(100%);
+    animation-fill-mode: forwards;
   }
-  100% {
+  to {
     transform: translateX(0%);
+    animation-fill-mode: forwards;
   }
 }
 @keyframes rotate {
   from {
-    transform: rotate(90deg);
+    transform: rotate(-180deg);
   }
   to {
     transform: rotate(0deg);
@@ -571,16 +571,18 @@ a:hover #btn {
 }
 
 @keyframes coche {
-  0% {
+  from {
     transform: translateX(100%);
+    animation-fill-mode: forwards;
   }
-  100% {
+  to {
     transform: translateX(0%);
+    animation-fill-mode: forwards;
   }
 }
 @keyframes rotate {
   from {
-    transform: rotate(90deg);
+    transform: rotate(-180deg);
   }
   to {
     transform: rotate(0deg);

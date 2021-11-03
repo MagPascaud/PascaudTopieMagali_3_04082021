@@ -186,8 +186,6 @@ body {
     margin-right: 20px;
   }
   body .image_menu img {
-    object-fit: cover;
-    width: 100%;
     height: 300px;
   }
   body .plat {
@@ -297,6 +295,8 @@ h2 {
 
 .image_menu img {
   width: 100%;
+  height: 220px;
+  object-fit: cover;
 }
 
 header {
@@ -375,16 +375,18 @@ a:hover #btn {
 }
 
 @keyframes coche {
-  0% {
+  from {
     transform: translateX(100%);
+    animation-fill-mode: forwards;
   }
-  100% {
+  to {
     transform: translateX(0%);
+    animation-fill-mode: forwards;
   }
 }
 @keyframes rotate {
   from {
-    transform: rotate(90deg);
+    transform: rotate(-180deg);
   }
   to {
     transform: rotate(0deg);
@@ -449,6 +451,7 @@ a:hover #btn {
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat:hover .fond_bleu {
   background-color: #99E2D0;
@@ -459,13 +462,10 @@ a:hover #btn {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  animation: coche 0.5s ease-in-out;
-  transition-property: margin-right;
-  overflow: hidden;
+  animation: coche 1s both;
 }
 .plat:hover .fond_bleu i {
-  animation: rotate 0.5s ease-in-out;
-  rotate: 90deg;
+  animation: rotate 1s;
 }
 
 .fond_bleu i {
@@ -604,16 +604,18 @@ a:hover #btn {
 }
 
 @keyframes coche {
-  0% {
+  from {
     transform: translateX(100%);
+    animation-fill-mode: forwards;
   }
-  100% {
+  to {
     transform: translateX(0%);
+    animation-fill-mode: forwards;
   }
 }
 @keyframes rotate {
   from {
-    transform: rotate(90deg);
+    transform: rotate(-180deg);
   }
   to {
     transform: rotate(0deg);
@@ -703,16 +705,18 @@ a:hover #btn {
 }
 
 @keyframes coche {
-  0% {
+  from {
     transform: translateX(100%);
+    animation-fill-mode: forwards;
   }
-  100% {
+  to {
     transform: translateX(0%);
+    animation-fill-mode: forwards;
   }
 }
 @keyframes rotate {
   from {
-    transform: rotate(90deg);
+    transform: rotate(-180deg);
   }
   to {
     transform: rotate(0deg);
