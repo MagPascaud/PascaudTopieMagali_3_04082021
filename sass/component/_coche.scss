@@ -15,7 +15,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    animation: coche 1s both;
+    animation: coche 1s ease-in-out;
+    
   }
   .fond_bleu i {
     animation: rotate 1s;
