@@ -91,13 +91,6 @@
     margin-bottom: 20px;
   }
 
-  #titre_menu {
-    justify-content: center;
-  }
-  #titre_menu h1 {
-    margin-right: 20px;
-  }
-
   #btn {
     width: 200px;
   }
@@ -197,14 +190,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  body .bloc_plat_column {
-    min-width: 49%;
-  }
   body #titre_menu {
     justify-content: center;
-  }
-  body #titre_menu h1 {
-    margin-right: 20px;
   }
   body .menu {
     padding-left: 20px;
@@ -233,44 +220,6 @@ footer {
   margin-top: -35px;
 }
 
-.plat {
-  border-radius: 15px;
-  background-color: white;
-  margin-bottom: 10px;
-  box-shadow: 2px 4px 4px 2px #e6dddd;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-}
-
-a .plat {
-  color: black;
-}
-
-.texte_gauche {
-  padding: 10px 10px 0 10px;
-  width: 100%;
-}
-
-#titre_menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.ligne_menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 13px;
-  padding: 5px;
-}
-
-#titre_menu i {
-  font-size: 25px;
-}
-
 h2 {
   font-weight: lighter;
   font-size: 16px;
@@ -279,24 +228,26 @@ h2 {
   padding-top: 10px;
 }
 
-.nom_plat {
-  margin: 15px 0 0 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.sous-titre {
-  font-weight: lighter;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .image_menu img {
   width: 100%;
   height: 220px;
   object-fit: cover;
+}
+
+.bloc_plat_column {
+  min-width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#titre_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#titre_menu h1 {
+  margin-right: 20px;
 }
 
 header {
@@ -382,14 +333,6 @@ a:hover #btn {
   to {
     transform: translateX(0%);
     animation-fill-mode: forwards;
-  }
-}
-@keyframes rotate {
-  from {
-    transform: rotate(-180deg);
-  }
-  to {
-    transform: rotate(0deg);
   }
 }
 @keyframes load {
@@ -564,13 +507,6 @@ a:hover #btn {
     margin-bottom: 20px;
   }
 
-  #titre_menu {
-    justify-content: center;
-  }
-  #titre_menu h1 {
-    margin-right: 20px;
-  }
-
   #btn {
     width: 200px;
   }
@@ -611,14 +547,6 @@ a:hover #btn {
   to {
     transform: translateX(0%);
     animation-fill-mode: forwards;
-  }
-}
-@keyframes rotate {
-  from {
-    transform: rotate(-180deg);
-  }
-  to {
-    transform: rotate(0deg);
   }
 }
 @keyframes load {
@@ -712,14 +640,6 @@ a:hover #btn {
   to {
     transform: translateX(0%);
     animation-fill-mode: forwards;
-  }
-}
-@keyframes rotate {
-  from {
-    transform: rotate(-180deg);
-  }
-  to {
-    transform: rotate(0deg);
   }
 }
 @keyframes load {
@@ -797,6 +717,63 @@ a:hover #btn {
 }
 .restaurant_bloc_coeur:hover .far, .restaurant_bloc_coeur:active .far {
   display: none;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.plat {
+  width: 340px;
+  display: flex;
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 10px;
+  box-shadow: 2px 4px 4px 2px #e6dddd;
+  justify-content: space-between;
+}
+.plat_text_container {
+  padding: 10px;
+  width: 250px;
+  margin: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.plat_text_container_title {
+  font-weight: bold;
+}
+.plat_text_container_desc {
+  font-weight: lighter;
+  font-size: 0.8em;
+}
+.plat_price {
+  display: flex;
+  padding: 10px;
+  align-items: end;
+  font-weight: bold;
+  max-width: 65px;
+}
+.plat_coche {
+  overflow: hidden;
+  width: 0px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: width 500ms ease-in-out;
+}
+.plat:hover .plat_coche {
+  width: 65px;
+}
+.plat:hover .fa-check-circle {
+  animation: rotate 1s;
 }
 
 h1 {

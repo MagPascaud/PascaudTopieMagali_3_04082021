@@ -76,14 +76,9 @@
       flex-wrap: wrap;
       justify-content: space-around;
     }
-    .bloc_plat_column {
-      min-width: 49%;
-    }
+    
     #titre_menu {
         justify-content: center;
-        h1 {
-          margin-right: 20px;
-        }
       }
       .menu {
           padding-left: 20px;
@@ -177,12 +172,7 @@
   .plat {
     margin-bottom: 20px;
   }
-  #titre_menu {
-    justify-content: center;
-    h1 {
-      margin-right: 20px;
-    }
-  }
+  
   #btn {
     width: 200px;
   }

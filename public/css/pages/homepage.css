@@ -110,13 +110,6 @@ header #icone_fleche a {
     margin-bottom: 20px;
   }
 
-  #titre_menu {
-    justify-content: center;
-  }
-  #titre_menu h1 {
-    margin-right: 20px;
-  }
-
   #btn {
     width: 200px;
   }
@@ -216,14 +209,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  body .bloc_plat_column {
-    min-width: 49%;
-  }
   body #titre_menu {
     justify-content: center;
-  }
-  body #titre_menu h1 {
-    margin-right: 20px;
   }
   body .menu {
     padding-left: 20px;
@@ -352,14 +339,6 @@ a:hover #btn {
   to {
     transform: translateX(0%);
     animation-fill-mode: forwards;
-  }
-}
-@keyframes rotate {
-  from {
-    transform: rotate(-180deg);
-  }
-  to {
-    transform: rotate(0deg);
   }
 }
 @keyframes load {
@@ -531,13 +510,6 @@ a:hover #btn {
     margin-bottom: 20px;
   }
 
-  #titre_menu {
-    justify-content: center;
-  }
-  #titre_menu h1 {
-    margin-right: 20px;
-  }
-
   #btn {
     width: 200px;
   }
@@ -578,14 +550,6 @@ a:hover #btn {
   to {
     transform: translateX(0%);
     animation-fill-mode: forwards;
-  }
-}
-@keyframes rotate {
-  from {
-    transform: rotate(-180deg);
-  }
-  to {
-    transform: rotate(0deg);
   }
 }
 @keyframes load {

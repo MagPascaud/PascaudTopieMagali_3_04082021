@@ -1,0 +1,60 @@
+// Animation rotation de la coche
+@keyframes rotate {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.plat {
+  width: 340px;
+  display: flex;
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 10px;
+  box-shadow: 2px 4px 4px 2px rgb(230, 221, 221);
+  justify-content: space-between;
+  &_text_container {
+    padding: 10px;
+    width: 250px;
+    margin: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    &_title {
+      font-weight: bold;
+    }
+    &_desc {
+        font-weight: lighter;
+        font-size: 0.8em;
+    }
+  }
+  &_price {
+    display: flex;
+    padding: 10px;
+    align-items: end;
+    font-weight: bold;
+    max-width: 65px;
+  }
+  &_coche {
+    overflow: hidden;
+    width: 0px;
+    background-color: $color_tertiaire;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: width 500ms ease-in-out;
+  }
+  &:hover {
+    .plat_coche {
+      width: 65px;
+    }
+    .fa-check-circle {
+      animation: rotate 1s;
+    }
+  }
+}
