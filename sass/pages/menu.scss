@@ -3,14 +3,12 @@
 @import "../layouts/menu-type";
 @import "../layouts/header";
 @import "../component/btn";
-@import "../component/coche";
 @import "../layouts/mediaqueries";
 @import "../component/animation";
 @import "../component/coeur";
 @import "../component/plat";
 
 h1 {
-    font-family: $title_font;
-    font-size: 1.8em;
+  font-family: $title_font;
+  font-size: 1.7em;
 }
-

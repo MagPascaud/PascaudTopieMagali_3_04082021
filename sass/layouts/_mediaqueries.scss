@@ -17,7 +17,7 @@
       justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;
-      
+
       .fonctionnement {
         margin: 20px 10px;
         width: auto;
@@ -26,7 +26,6 @@
     .fonctionnement i {
       position: unset;
       margin-right: 10px;
-      
     }
     #restaurant-bloc {
       display: flex;
@@ -37,7 +36,7 @@
     .restaurant {
       width: auto;
       padding: 0 20px 20px 20px;
-      .restaurant_intro {
+      &_intro {
         text-align: center;
         margin: 50px;
       }
@@ -46,7 +45,7 @@
       }
     }
     .restaurant_bloc_nouveau {
-      .restaurant_bloc_nouveau_vert {
+      &_vert {
         position: absolute;
         right: unset;
       }
@@ -65,8 +64,8 @@
       margin-right: 20px;
     }
     .image_menu img {
-        height: 300px;
-      }
+      height: 300px;
+    }
     .plat {
       margin-bottom: 30px;
     }
@@ -76,17 +75,17 @@
       flex-wrap: wrap;
       justify-content: space-around;
     }
-    
+
     #titre_menu {
-        justify-content: center;
-      }
-      .menu {
-          padding-left: 20px;
-          padding-right: 20px;
-      }
-      #btn {
-        width: 200px;
-      }
+      justify-content: center;
+    }
+    .menu {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    #btn {
+      width: 200px;
+    }
   }
 }
 /* Sur PC, quand la largeur de la fenêtre fait plus de 1024px */
@@ -114,7 +113,7 @@
       padding: 25px 10px;
       margin: auto;
       width: 300px;
-      .fonctionnement_numero {
+      &_numero {
         left: -10px;
       }
     }
@@ -141,7 +140,7 @@
     }
   }
   .restaurant_bloc_nouveau {
-    .restaurant_bloc_nouveau_vert {
+    &_vert {
       position: absolute;
       right: unset;
     }
@@ -172,7 +171,7 @@
   .plat {
     margin-bottom: 20px;
   }
-  
+
   #btn {
     width: 200px;
   }

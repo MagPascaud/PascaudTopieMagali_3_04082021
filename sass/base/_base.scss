@@ -2,11 +2,7 @@
 @import "../utils/variables";
 @import "../layouts/footer";
 body {
-    font-family: $body_font;
-    margin: auto;
-    @include responsive;
-}
-
-footer {
-    @include footer;
+  font-family: $body_font;
+  margin: auto;
+  @include responsive;
 }

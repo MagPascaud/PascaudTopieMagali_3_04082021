@@ -1,21 +1,20 @@
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 15px;
 
-    img {
-        width: 200px;
+  img {
+    width: 200px;
+  }
+  #icone_fleche {
+    position: absolute;
+    left: 10px;
+
+    & a {
+      color: black;
     }
-    #icone_fleche {
-        position: absolute;
-        left: 10px;
-    }
-    #icone_fleche a {
-        color: black;
-    }
+  }
 }
-
-

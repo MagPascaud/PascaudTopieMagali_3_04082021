@@ -47,7 +47,7 @@ header #icone_fleche a {
     margin: auto;
     width: 300px;
   }
-  #fonctionnement_bloc .fonctionnement .fonctionnement_numero {
+  #fonctionnement_bloc .fonctionnement_numero {
     left: -10px;
   }
 
@@ -75,7 +75,7 @@ header #icone_fleche a {
     width: 45%;
   }
 
-  .restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
+  .restaurant_bloc_nouveau_vert {
     position: absolute;
     right: unset;
   }
@@ -137,6 +137,14 @@ footer div {
   margin: 5px 0 5px 0;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
 body {
   font-family: "Roboto";
   margin: auto;
@@ -175,14 +183,14 @@ body {
     width: auto;
     padding: 0 20px 20px 20px;
   }
-  body .restaurant .restaurant_intro {
+  body .restaurant_intro {
     text-align: center;
     margin: 50px;
   }
   body .restaurant .restaurant_bloc {
     width: 45%;
   }
-  body .restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
+  body .restaurant_bloc_nouveau_vert {
     position: absolute;
     right: unset;
   }
@@ -221,21 +229,13 @@ body {
   }
 }
 
-footer {
-  background-color: #353535;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
 #btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 50%;
   border-radius: 25px;
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#9356dc, #ff79da);
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -263,7 +263,7 @@ a:hover #btn {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   margin: 20px;
   padding: 25px 15px 25px 15px;
   box-shadow: 2px 4px 4px 2px #e6dddd;
@@ -285,7 +285,7 @@ a:hover #btn {
   justify-content: center;
   align-items: center;
   margin: auto;
-  background-color: #9356DC;
+  background-color: #9356dc;
 }
 
 .fonctionnement i {
@@ -296,11 +296,11 @@ a:hover #btn {
 }
 
 .fonctionnement:hover {
-  background-color: #F5EDFF;
+  background-color: #f5edff;
   box-shadow: 4px 8px 8px 4px #d9baff;
 }
 .fonctionnement:hover > i {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 @keyframes animation-delay {
@@ -341,6 +341,14 @@ a:hover #btn {
     animation-fill-mode: forwards;
   }
 }
+@keyframes rotate {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 @keyframes load {
   0% {
     transform: rotate(0deg);
@@ -376,7 +384,7 @@ a:hover #btn {
   width: 150px;
   height: 150px;
   border: 15px solid #c9abee;
-  border-top: 15px solid #FF79DA;
+  border-top: 15px solid #ff79da;
   border-radius: 50%;
   animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 3;
@@ -389,11 +397,11 @@ a:hover #btn {
   }
   33% {
     opacity: 0.33;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
+    background: linear-gradient(to top, #9356dc, #ff79da);
   }
   66% {
     opacity: 0.66;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
+    background: linear-gradient(to top, #9356dc, #ff79da);
   }
 }
 .restaurant_bloc_coeur {
@@ -406,7 +414,7 @@ a:hover #btn {
   background-clip: text !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background: linear-gradient(to top, #9356dc, #ff79da);
   color: white;
   opacity: 1;
 }
@@ -447,7 +455,7 @@ a:hover #btn {
     margin: auto;
     width: 300px;
   }
-  #fonctionnement_bloc .fonctionnement .fonctionnement_numero {
+  #fonctionnement_bloc .fonctionnement_numero {
     left: -10px;
   }
 
@@ -475,7 +483,7 @@ a:hover #btn {
     width: 45%;
   }
 
-  .restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
+  .restaurant_bloc_nouveau_vert {
     position: absolute;
     right: unset;
   }
@@ -552,6 +560,14 @@ a:hover #btn {
     animation-fill-mode: forwards;
   }
 }
+@keyframes rotate {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 @keyframes load {
   0% {
     transform: rotate(0deg);
@@ -587,7 +603,7 @@ a:hover #btn {
   width: 150px;
   height: 150px;
   border: 15px solid #c9abee;
-  border-top: 15px solid #FF79DA;
+  border-top: 15px solid #ff79da;
   border-radius: 50%;
   animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 3;
@@ -600,11 +616,11 @@ a:hover #btn {
   }
   33% {
     opacity: 0.33;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
+    background: linear-gradient(to top, #9356dc, #ff79da);
   }
   66% {
     opacity: 0.66;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
+    background: linear-gradient(to top, #9356dc, #ff79da);
   }
 }
 #icone_fleche {
@@ -615,7 +631,7 @@ a:hover #btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   padding: 15px;
   font-weight: bold;
   box-shadow: #b9b7b7 0 2px 2px inset;
@@ -630,7 +646,7 @@ a:hover #btn {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   text-align: center;
   padding: 5px;
   margin: auto;
@@ -651,22 +667,22 @@ a:hover #btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 35px 20px;
   margin: 50px 0 0 0;
 }
-.restaurant .restaurant_titre {
+.restaurant_titre {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
-.restaurant .restaurant_titre .restaurant_bloc_gauche {
+.restaurant_titre .restaurant_bloc_gauche {
   display: flex;
   flex-direction: column;
 }
-.restaurant .restaurant_titre .restaurant_titre_bold {
+.restaurant_titre .restaurant_titre_bold {
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -674,7 +690,7 @@ a:hover #btn {
   background-color: white;
   margin: 10px 0;
   border-radius: 15px;
-  box-shadow: 2px 2px 10px #F6F6F6;
+  box-shadow: 2px 2px 10px #f6f6f6;
 }
 .restaurant .restaurant_intro {
   font-size: 1.2em;
@@ -687,12 +703,12 @@ a:hover #btn {
   flex-direction: row;
   position: relative;
 }
-.restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
+.restaurant_bloc_nouveau_vert {
   position: absolute;
   right: 30px;
   margin: 10px;
   border-radius: 2px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   padding: 5px 10px;
   color: #217460;
   font-weight: bold;
@@ -713,7 +729,7 @@ a:hover #btn {
 }
 
 a:hover .restaurant_bloc {
-  box-shadow: 4px 4px 10px #F5EDFF;
+  box-shadow: 4px 4px 10px #f5edff;
 }
 
 /*# sourceMappingURL=homepage.css.map */

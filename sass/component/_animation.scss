@@ -1,95 +1,104 @@
 // Animation du décalage d'apparition des plats
 @keyframes animation-delay {
-    0% {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 .animation_delay1 {
-    opacity: 0;
-    animation: animation-delay 1000ms;
-    animation-fill-mode: forwards;
+  opacity: 0;
+  animation: animation-delay 1000ms;
+  animation-fill-mode: forwards;
 }
 .animation_delay2 {
-    opacity: 0;
-    animation: animation-delay 1000ms 500ms;
-    animation-fill-mode: forwards;
+  opacity: 0;
+  animation: animation-delay 1000ms 500ms;
+  animation-fill-mode: forwards;
 }
 .animation_delay3 {
-    opacity: 0;
-    animation: animation-delay 1000ms 1000ms;
-    animation-fill-mode: forwards;
+  opacity: 0;
+  animation: animation-delay 1000ms 1000ms;
+  animation-fill-mode: forwards;
 }
 
 // animation de la coche coulissante
 @keyframes coche {
-    from {
-        transform: translateX(100%); 
-        animation-fill-mode: forwards;
-    }
-    to {
-        transform: translateX(0%);
-        animation-fill-mode: forwards; 
-    }    
+  from {
+    transform: translateX(100%);
+    animation-fill-mode: forwards;
+  }
+  to {
+    transform: translateX(0%);
+    animation-fill-mode: forwards;
+  }
+}
+
+// Animation rotation de la coche
+@keyframes rotate {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 // animation loader
 @keyframes load {
-    0% {
-        transform: rotate(0deg);
-        opacity: 0;
-    }
-    100% {
-        transform: rotate(360deg);
-        opacity: 1;
-    }
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
 }
 @keyframes fondu {
-    from {
-        visibility: visible;
-    }
-    to {
-        visibility: hidden;
-    }
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
 }
 #loader {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    animation: 3s fondu; 
-    visibility: hidden;  
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(169, 169, 169, .5);
-    z-index: 3;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  animation: 3s fondu;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(169, 169, 169, 0.5);
+  z-index: 3;
 }
 #loader_cercle {
-    width: 150px;
-    height: 150px;
-    border: 15px solid lighten($color-primaire, $amount: 20);
-    border-top: 15px solid $color_secondaire;
-    border-radius: 50%;
-    animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    z-index: 3;
+  width: 150px;
+  height: 150px;
+  border: 15px solid lighten($color-primaire, $amount: 20);
+  border-top: 15px solid $color_secondaire;
+  border-radius: 50%;
+  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 3;
 }
 // Animation du remplissage du coeur
 @keyframes color_change {
-    0% {
-      background: white;
-      opacity: 0;
-    }
-    33% {
-        opacity: 0.33;
-        background: linear-gradient(to top, $color_btn);
-    }
-    66% {
-        opacity: 0.66;
-        background: linear-gradient(to top, $color_btn);
-    }
-    
+  0% {
+    background: white;
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.33;
+    background: linear-gradient(to top, $color_btn);
+  }
+  66% {
+    opacity: 0.66;
+    background: linear-gradient(to top, $color_btn);
+  }
 }

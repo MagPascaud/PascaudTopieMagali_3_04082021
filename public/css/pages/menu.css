@@ -28,7 +28,7 @@
     margin: auto;
     width: 300px;
   }
-  #fonctionnement_bloc .fonctionnement .fonctionnement_numero {
+  #fonctionnement_bloc .fonctionnement_numero {
     left: -10px;
   }
 
@@ -56,7 +56,7 @@
     width: 45%;
   }
 
-  .restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
+  .restaurant_bloc_nouveau_vert {
     position: absolute;
     right: unset;
   }
@@ -118,6 +118,14 @@ footer div {
   margin: 5px 0 5px 0;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
 body {
   font-family: "Roboto";
   margin: auto;
@@ -156,14 +164,14 @@ body {
     width: auto;
     padding: 0 20px 20px 20px;
   }
-  body .restaurant .restaurant_intro {
+  body .restaurant_intro {
     text-align: center;
     margin: 50px;
   }
   body .restaurant .restaurant_bloc {
     width: 45%;
   }
-  body .restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
+  body .restaurant_bloc_nouveau_vert {
     position: absolute;
     right: unset;
   }
@@ -202,19 +210,11 @@ body {
   }
 }
 
-footer {
-  background-color: #353535;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
 .menu {
   display: flex;
   flex-direction: column;
   border-radius: 40px 40px 0 0;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 15px;
   position: relative;
   margin-top: -35px;
@@ -223,7 +223,7 @@ footer {
 h2 {
   font-weight: lighter;
   font-size: 16px;
-  border-bottom: solid #99E2D0;
+  border-bottom: solid #99e2d0;
   width: 13%;
   padding-top: 10px;
 }
@@ -275,7 +275,7 @@ header #icone_fleche a {
   justify-content: center;
   width: 50%;
   border-radius: 25px;
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#9356dc, #ff79da);
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -295,124 +295,6 @@ a:hover #btn {
 
 .menu a {
   text-decoration: none;
-}
-
-@keyframes animation-delay {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-.animation_delay1 {
-  opacity: 0;
-  animation: animation-delay 1000ms;
-  animation-fill-mode: forwards;
-}
-
-.animation_delay2 {
-  opacity: 0;
-  animation: animation-delay 1000ms 500ms;
-  animation-fill-mode: forwards;
-}
-
-.animation_delay3 {
-  opacity: 0;
-  animation: animation-delay 1000ms 1000ms;
-  animation-fill-mode: forwards;
-}
-
-@keyframes coche {
-  from {
-    transform: translateX(100%);
-    animation-fill-mode: forwards;
-  }
-  to {
-    transform: translateX(0%);
-    animation-fill-mode: forwards;
-  }
-}
-@keyframes load {
-  0% {
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-}
-@keyframes fondu {
-  from {
-    visibility: visible;
-  }
-  to {
-    visibility: hidden;
-  }
-}
-#loader {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  animation: 3s fondu;
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(169, 169, 169, 0.5);
-  z-index: 3;
-}
-
-#loader_cercle {
-  width: 150px;
-  height: 150px;
-  border: 15px solid #c9abee;
-  border-top: 15px solid #FF79DA;
-  border-radius: 50%;
-  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  z-index: 3;
-}
-
-@keyframes color_change {
-  0% {
-    background: white;
-    opacity: 0;
-  }
-  33% {
-    opacity: 0.33;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
-  }
-  66% {
-    opacity: 0.66;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
-  }
-}
-.plat:hover {
-  cursor: pointer;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.plat:hover .fond_bleu {
-  background-color: #99E2D0;
-  border: none;
-  width: 65px;
-  border-radius: 0 15px 15px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  animation: coche 1s ease-in-out;
-}
-.plat:hover .fond_bleu i {
-  animation: rotate 1s;
-}
-
-.fond_bleu i {
-  color: white;
 }
 
 /* Sur les tablettes, quand la largeur de la fenêtre fait entre 480px et 1024px */
@@ -444,7 +326,7 @@ a:hover #btn {
     margin: auto;
     width: 300px;
   }
-  #fonctionnement_bloc .fonctionnement .fonctionnement_numero {
+  #fonctionnement_bloc .fonctionnement_numero {
     left: -10px;
   }
 
@@ -472,7 +354,7 @@ a:hover #btn {
     width: 45%;
   }
 
-  .restaurant_bloc_nouveau .restaurant_bloc_nouveau_vert {
+  .restaurant_bloc_nouveau_vert {
     position: absolute;
     right: unset;
   }
@@ -549,6 +431,14 @@ a:hover #btn {
     animation-fill-mode: forwards;
   }
 }
+@keyframes rotate {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 @keyframes load {
   0% {
     transform: rotate(0deg);
@@ -584,7 +474,7 @@ a:hover #btn {
   width: 150px;
   height: 150px;
   border: 15px solid #c9abee;
-  border-top: 15px solid #FF79DA;
+  border-top: 15px solid #ff79da;
   border-radius: 50%;
   animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 3;
@@ -597,11 +487,11 @@ a:hover #btn {
   }
   33% {
     opacity: 0.33;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
+    background: linear-gradient(to top, #9356dc, #ff79da);
   }
   66% {
     opacity: 0.66;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
+    background: linear-gradient(to top, #9356dc, #ff79da);
   }
 }
 @keyframes animation-delay {
@@ -642,6 +532,14 @@ a:hover #btn {
     animation-fill-mode: forwards;
   }
 }
+@keyframes rotate {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 @keyframes load {
   0% {
     transform: rotate(0deg);
@@ -677,7 +575,7 @@ a:hover #btn {
   width: 150px;
   height: 150px;
   border: 15px solid #c9abee;
-  border-top: 15px solid #FF79DA;
+  border-top: 15px solid #ff79da;
   border-radius: 50%;
   animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 3;
@@ -690,11 +588,11 @@ a:hover #btn {
   }
   33% {
     opacity: 0.33;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
+    background: linear-gradient(to top, #9356dc, #ff79da);
   }
   66% {
     opacity: 0.66;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
+    background: linear-gradient(to top, #9356dc, #ff79da);
   }
 }
 .restaurant_bloc_coeur {
@@ -707,7 +605,7 @@ a:hover #btn {
   background-clip: text !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background: linear-gradient(to top, #9356dc, #ff79da);
   color: white;
   opacity: 1;
 }
@@ -719,16 +617,8 @@ a:hover #btn {
   display: none;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(-180deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
 .plat {
-  width: 340px;
+  width: 330px;
   display: flex;
   border-radius: 15px;
   background-color: white;
@@ -761,13 +651,16 @@ a:hover #btn {
 .plat_coche {
   overflow: hidden;
   width: 0px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   transition: width 500ms ease-in-out;
+}
+.plat:hover {
+  cursor: pointer;
 }
 .plat:hover .plat_coche {
   width: 65px;
@@ -778,7 +671,7 @@ a:hover #btn {
 
 h1 {
   font-family: "Shrikhand";
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 /*# sourceMappingURL=menu.css.map */

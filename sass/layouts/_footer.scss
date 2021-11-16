@@ -1,28 +1,30 @@
 @mixin footer {
-    background-color: #353535;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-
+  background-color: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
 footer a {
-    color: white;
-    text-decoration: none;
-    
+  color: white;
+  text-decoration: none;
 }
 .icone_main i {
-    font-size: 10px;
+  font-size: 10px;
 }
-footer i+a {
-    margin-left: 13px;
+footer i + a {
+  margin-left: 13px;
 }
 .titre_footer {
-    font-family: 'Shrikhand', cursive;
-    font-size: 18px;
-    margin: 0 0 10px 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  margin: 0 0 10px 0;
 }
 footer div {
-    margin: 5px 0 5px 0;
+  margin: 5px 0 5px 0;
+}
+
+footer {
+  @include footer;
 }

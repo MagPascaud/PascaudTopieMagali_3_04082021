@@ -1,15 +1,5 @@
-// Animation rotation de la coche
-@keyframes rotate {
-  from {
-    transform: rotate(-180deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
 .plat {
-  width: 340px;
+  width: 330px;
   display: flex;
   border-radius: 15px;
   background-color: white;
@@ -27,8 +17,8 @@
       font-weight: bold;
     }
     &_desc {
-        font-weight: lighter;
-        font-size: 0.8em;
+      font-weight: lighter;
+      font-size: 0.8em;
     }
   }
   &_price {
@@ -50,6 +40,7 @@
     transition: width 500ms ease-in-out;
   }
   &:hover {
+    cursor: pointer;
     .plat_coche {
       width: 65px;
     }

@@ -14,7 +14,8 @@
   font-size: 1.2em;
   padding: 10px;
   cursor: pointer;
-  &:hover, &:active {
+  &:hover,
+  &:active {
     .fas {
       display: block;
       animation: color_change 1s;
