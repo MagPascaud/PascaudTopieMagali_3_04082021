@@ -1,26 +1,24 @@
-#btn {
+.btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 50%;
+  max-width: 500px;
   border-radius: 25px;
   background: linear-gradient($color_btn);
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 50px 15px 50px;
   color: white;
+  font-weight: bold;
   text-decoration: none;
+  border: unset;
 }
-a:hover #btn {
+.btn:hover{
+  cursor: pointer;
   box-shadow: 4px 8px 8px 4px darken($color_fond_gris_hover, $amount: 20);
 
   // background: lighten($color_secondaire, $amount: 5);
   filter: brightness(1.2);
 }
-#intro a {
-  text-decoration: none;
-}
-.menu a {
-  text-decoration: none;
-}
+

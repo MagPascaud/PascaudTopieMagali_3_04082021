@@ -38,9 +38,9 @@
 }
 
 .fonctionnement:hover {
+  cursor: pointer;
   > i {
     color: $color_primaire;
   }
   background-color: $color_fond_gris_hover;
-  box-shadow: 4px 8px 8px 4px darken($color_fond_gris_hover, $amount: 10);
 }

@@ -26,16 +26,16 @@
 }
 
 // animation de la coche coulissante
-@keyframes coche {
-  from {
-    transform: translateX(100%);
-    animation-fill-mode: forwards;
-  }
-  to {
-    transform: translateX(0%);
-    animation-fill-mode: forwards;
-  }
-}
+// @keyframes coche {
+//   from {
+//     transform: translateX(100%);
+//     animation-fill-mode: forwards;
+//   }
+//   to {
+//     transform: translateX(0%);
+//     animation-fill-mode: forwards;
+//   }
+// }
 
 // Animation rotation de la coche
 @keyframes rotate {
@@ -48,45 +48,45 @@
 }
 
 // animation loader
-@keyframes load {
-  0% {
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-}
-@keyframes fondu {
-  from {
-    visibility: visible;
-  }
-  to {
-    visibility: hidden;
-  }
-}
-#loader {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  animation: 3s fondu;
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(169, 169, 169, 0.5);
-  z-index: 3;
-}
-#loader_cercle {
-  width: 150px;
-  height: 150px;
-  border: 15px solid lighten($color-primaire, $amount: 20);
-  border-top: 15px solid $color_secondaire;
-  border-radius: 50%;
-  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  z-index: 3;
-}
+// @keyframes load {
+//   0% {
+//     transform: rotate(0deg);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//     opacity: 1;
+//   }
+// }
+// @keyframes fondu {
+//   from {
+//     visibility: visible;
+//   }
+//   to {
+//     visibility: hidden;
+//   }
+// }
+// #loader {
+//   position: fixed;
+//   height: 100%;
+//   width: 100%;
+//   animation: 3s fondu;
+//   visibility: hidden;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: rgba(169, 169, 169, 0.5);
+//   z-index: 3;
+// }
+// #loader_cercle {
+//   width: 150px;
+//   height: 150px;
+//   border: 15px solid lighten($color-primaire, $amount: 20);
+//   border-top: 15px solid $color_secondaire;
+//   border-radius: 50%;
+//   animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+//   z-index: 3;
+// }
 // Animation du remplissage du coeur
 @keyframes color_change {
   0% {

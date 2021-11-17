@@ -269,32 +269,27 @@ header #icone_fleche a {
   color: black;
 }
 
-#btn {
+.btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 50%;
+  max-width: 500px;
   border-radius: 25px;
   background: linear-gradient(#9356dc, #ff79da);
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 50px 15px 50px;
   color: white;
+  font-weight: bold;
   text-decoration: none;
+  border: unset;
 }
 
-a:hover #btn {
+.btn:hover {
+  cursor: pointer;
   box-shadow: 4px 8px 8px 4px #bc87ff;
   filter: brightness(1.2);
-}
-
-#intro a {
-  text-decoration: none;
-}
-
-.menu a {
-  text-decoration: none;
 }
 
 /* Sur les tablettes, quand la largeur de la fenêtre fait entre 480px et 1024px */
@@ -421,16 +416,6 @@ a:hover #btn {
   animation-fill-mode: forwards;
 }
 
-@keyframes coche {
-  from {
-    transform: translateX(100%);
-    animation-fill-mode: forwards;
-  }
-  to {
-    transform: translateX(0%);
-    animation-fill-mode: forwards;
-  }
-}
 @keyframes rotate {
   from {
     transform: rotate(-180deg);
@@ -439,47 +424,6 @@ a:hover #btn {
     transform: rotate(0deg);
   }
 }
-@keyframes load {
-  0% {
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-}
-@keyframes fondu {
-  from {
-    visibility: visible;
-  }
-  to {
-    visibility: hidden;
-  }
-}
-#loader {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  animation: 3s fondu;
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(169, 169, 169, 0.5);
-  z-index: 3;
-}
-
-#loader_cercle {
-  width: 150px;
-  height: 150px;
-  border: 15px solid #c9abee;
-  border-top: 15px solid #ff79da;
-  border-radius: 50%;
-  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  z-index: 3;
-}
-
 @keyframes color_change {
   0% {
     background: white;
@@ -522,16 +466,6 @@ a:hover #btn {
   animation-fill-mode: forwards;
 }
 
-@keyframes coche {
-  from {
-    transform: translateX(100%);
-    animation-fill-mode: forwards;
-  }
-  to {
-    transform: translateX(0%);
-    animation-fill-mode: forwards;
-  }
-}
 @keyframes rotate {
   from {
     transform: rotate(-180deg);
@@ -540,47 +474,6 @@ a:hover #btn {
     transform: rotate(0deg);
   }
 }
-@keyframes load {
-  0% {
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-}
-@keyframes fondu {
-  from {
-    visibility: visible;
-  }
-  to {
-    visibility: hidden;
-  }
-}
-#loader {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  animation: 3s fondu;
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(169, 169, 169, 0.5);
-  z-index: 3;
-}
-
-#loader_cercle {
-  width: 150px;
-  height: 150px;
-  border: 15px solid #c9abee;
-  border-top: 15px solid #ff79da;
-  border-radius: 50%;
-  animation: load 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  z-index: 3;
-}
-
 @keyframes color_change {
   0% {
     background: white;
